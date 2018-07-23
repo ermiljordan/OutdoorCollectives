@@ -89,3 +89,9 @@ function odc_dynamic_css() {
 	wp_add_inline_style('odc-style', $custom_css);
 }
 add_action('wp_enqueue_scripts', 'odc_dynamic_css');
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+	global $post;
+	return ' [...]<a class="moretag" href="'. get_permalink($post->ID) . '">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

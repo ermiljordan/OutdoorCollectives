@@ -1,4 +1,39 @@
-img.post-42 {
-  height: 100vh;
-  width: 100;
+.blog 
+.content-area {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;  
+  padding-top: 5rem;
+}
+.entry-title {
+  position: absolute;
+  background: #9ab899;
+  width: 60%;
+  margin-top: 2.25rem;
+  padding: .75rem 1.5rem;
+  font-size: 2rem;
+  a {
+    color: #fff;
+    text-decoration: none;
+    max-width: 75%;
+  }
+}
+.entry-meta {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  color: #fff;
+  display: inline-block;
+  right: 0;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+//SINGLE FORUM
+.single 
+.content-area {
+  padding-top: 5rem;
 }
