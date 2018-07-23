@@ -1,0 +1,28 @@
+.header-background {
+  background: rgba(255, 255, 255, 0.4);
+
+}
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 65px;
+  margin: 0 auto;
+  @include desktop {
+    justify-content: flex-start;
+    padding-left: 3rem;
+  }
+}
+img.logo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  height: 50px;
+}
+.site-header.reverse-header {
+  background-color: transparent;
+  border-bottom: 0;
+  position: absolute;
+}

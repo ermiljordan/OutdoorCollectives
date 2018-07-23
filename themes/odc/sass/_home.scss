@@ -1,0 +1,152 @@
+.home 
+.hero-banner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include desktop {
+    height: 100vh
+  }
+}
+.sub-caption {
+  text-align: center;
+  text-transform: capitalize;
+  color: #de4d61;
+}
+.logo-banner {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+
+img.logo-circle {
+  height: 15rem;
+  width: auto;
+  @include desktop {
+    height: 18rem;
+  }
+}
+
+.zypher-tents {
+  ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 0;
+      @include tablet {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+      }
+      @include desktop {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: auto;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+      }
+  }
+    li {
+      border: 1px solid #e1e1e1;
+      flex: 0 1 32%;
+      position: relative;
+      margin-bottom: 1rem;
+    }
+  }
+.home .zypher-tents .thumbnail-tents {
+  background-color: #e1e1e1;
+  overflow: hidden;
+  position: relative;
+    .wp-post-image {
+      left: 50%;
+      max-height: 250px;
+      max-width: none;
+      position: absolute;
+      top:50%;
+      transform: translate(-50%,-52%);
+      width: auto;
+      @include tablet {
+        max-height: 325px;
+      }
+      @include window {
+        max-height: 510px;
+      }
+      @include desktop {
+        max-height: 250px;
+      }
+    }
+}
+img.tents {
+    height: 100%;
+    width: 100%;
+}
+.content p{
+  color: black;
+  padding-bottom: 2rem;
+}
+.stary-nights {
+  border-bottom: 1px solid white;
+  h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  height: 15vh;
+  @include tablet {
+    font-size: 1.7rem;
+  }
+}
+}
+.about-zypher {
+  border-top: 3px solid white;
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+  }
+}
+.stary-nights {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+}
+.adventure {
+  max-width: 100%;
+  display: flex;
+  .adventure-photos {
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+    }
+  }
+}
+  .right-caption {
+    display: none;
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: unset;
+      width: 50%;
+      background-color: #222222;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+  }
+  .adventure-cap {
+    padding-bottom: 3rem;
+    @include desktop {
+      display: none;
+    }
+  }
