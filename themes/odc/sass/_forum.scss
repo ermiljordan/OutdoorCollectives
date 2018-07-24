@@ -6,6 +6,9 @@
   margin-left: auto;
   width: auto;  
   padding-top: 4rem;
+  @include desktop{
+    max-width: 1240px;
+  }
 }
 
 .entry-title {
@@ -14,6 +17,9 @@
   width: 40%;
   margin-top: 2.25rem;
   padding: .75rem 1.5rem;
+  @include desktop {
+    width: 20%;
+  }
   a {
     color: #fff;
     text-decoration: none;
@@ -29,6 +35,11 @@
   color: #fff;
   display: inline-block;
   right: 0;
+  @include desktop {
+    transform:translateX(-32%);
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   a {
     color: white;
     text-decoration: none;
@@ -44,6 +55,10 @@
 .single 
 .content-area {
   padding-top: 4rem;
+  @include desktop{
+    max-width: 1240px;
+    margin: 0 auto;
+  }
 }
 .entry-header h1 {
   color: #ffff;
