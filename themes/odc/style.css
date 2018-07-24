@@ -1317,3 +1317,12 @@ img.logo-footer {
     .entry-footer span a {
       color: #9ab899;
       padding-left: 1rem; }
+
+.form-submit {
+  padding-bottom: 3rem; }
+  .form-submit input.submit {
+    background: #9ab899;
+    border-color: #9ab899;
+    padding: 1rem;
+    color: #fff;
+    text-transform: uppercase; }
