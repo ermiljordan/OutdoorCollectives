@@ -28,6 +28,17 @@ img.logo-circle {
     height: 18rem;
   }
 }
+.sub-caption a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: Merriweather;
+  font-weight: bold;
+  font-style: italic;
+  &:hover {
+    color: #de4d61
+  }
+}
 
 .zypher-tents {
   ul {
