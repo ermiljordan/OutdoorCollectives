@@ -1172,7 +1172,8 @@ span.wpcf7-not-valid-tip {
 
 .site-info {
   background-color: #2A373C;
-  text-align: center; }
+  text-align: center;
+  padding: 3rem; }
 
 img.logo-footer {
   width: 10rem;
