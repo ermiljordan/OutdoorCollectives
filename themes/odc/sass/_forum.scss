@@ -7,6 +7,7 @@
   width: auto;  
   padding-top: 4rem;
 }
+
 .entry-title {
   position: absolute;
   background: rgba(255, 255, 255, 0.4);
@@ -42,9 +43,22 @@
 //SINGLE FORUM
 .single 
 .content-area {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
-
+.entry-header h1 {
+  color: #ffff;
+}
+.nav-links {
+  text-transform: uppercase;
+  a {
+    color: #9ab899;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid #9ab899;
+    padding: 1rem;
+  }
+}
 //BLOG FOOTER
 .entry-footer {
   text-align: center;
