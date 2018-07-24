@@ -1059,6 +1059,9 @@ img.tents {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       padding-left: 3rem; } }
 
 img.logo-header {
@@ -1292,7 +1295,8 @@ img.logo-footer {
   padding-top: 4rem; }
 
 .entry-header h1 {
-  color: #ffff; }
+  color: #ffff;
+  text-align: center; }
 
 .nav-links {
   text-transform: uppercase; }
