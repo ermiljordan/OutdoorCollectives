@@ -26,7 +26,7 @@ get_header(); ?>
 				</div><!--Logo banner-->
       </section><!--HERO BANNER--> 
 	<section class="about-zypher container">
-			<h2>Zypher Air Frame Tent</h2>
+			<h2>Zephyr Air Frame Tent</h2>
 				<?php echo CFS()->get('zypher_air_frame_cap'); ?>
 	</section>
 	<section class="zypher-tents container-tent">
@@ -37,7 +37,7 @@ get_header(); ?>
 			<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
 		</div>
 			<div class="content">
-				<h3>Zypher II</h3>
+				<h3>Zephyr II</h3>
 					<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
 			</div>
 	</li>
@@ -46,7 +46,7 @@ get_header(); ?>
 			<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
 		</div>
 			<div class="content">
-				<h3>Zypher IV</h3>
+				<h3>Zephyr IV</h3>
 					<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
 			</div>	
 	</li>
@@ -55,7 +55,7 @@ get_header(); ?>
 			<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
 		</div>	
 			<div class="content">
-				<h3>Zypher VIII</h3>
+				<h3>Zephyr VIII</h3>
 					<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
 			</div>
 	</li>
