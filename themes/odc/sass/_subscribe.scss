@@ -4,3 +4,49 @@
   flex-direction: column;
   align-items: center;
 }
+.italic {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  font-family: 'Playfair Display';
+  font-weight: normal;
+  font-style: italic;
+  padding: 0;
+  @include tablet {
+    font-size: 6rem;
+  }
+  .bold {
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+.sub-cap {
+  color: #fff;
+  font-family: 'Playfair Display';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #fff;
+  @include tablet {
+    font-size: 3rem;
+  }
+}
+.sub-par {
+  padding-bottom: 3rem;
+  @include window {
+    width: 50%;
+  }
+}
+.mc4wp-form-fields p {
+  display: flex;
+  justify-content: center;
+}
+.mc4wp-form-fields input[type="submit"] {
+  background-color: #9ab899;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #404040;
+  }
+}
