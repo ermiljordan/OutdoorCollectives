@@ -3,11 +3,14 @@
 
 }
 .header {
-  display: flex;
-  justify-content: center;
   width: 100vw;
   height: 65px;
-  margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
   @include desktop {
     justify-content: flex-start;
     padding-left: 3rem;
@@ -25,4 +28,10 @@ img.logo-header {
   background-color: transparent;
   border-bottom: 0;
   position: absolute;
+}
+.menu-menu-1-container ul {
+  display: unset;
+  a {
+    color: #9ab899;
+  }
 }

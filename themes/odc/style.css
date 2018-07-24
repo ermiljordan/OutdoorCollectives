@@ -1040,15 +1040,20 @@ img.tents {
   background: rgba(255, 255, 255, 0.4); }
 
 .header {
+  width: 100vw;
+  height: 65px;
+  padding-left: 3rem;
+  padding-right: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100vw;
-  height: 65px;
-  margin: 0 auto; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase; }
   @media (min-width: 1240px) {
     .header {
       -webkit-box-pack: start;
@@ -1074,6 +1079,11 @@ img.logo-header {
   background-color: transparent;
   border-bottom: 0;
   position: absolute; }
+
+.menu-menu-1-container ul {
+  display: unset; }
+  .menu-menu-1-container ul a {
+    color: #9ab899; }
 
 .container {
   max-width: 100%;
@@ -1248,19 +1258,20 @@ img.logo-footer {
   margin-right: auto;
   margin-left: auto;
   width: auto;
-  padding-top: 5rem; }
+  padding-top: 4rem; }
 
 .entry-title {
   position: absolute;
-  background: #9ab899;
-  width: 60%;
+  background: rgba(255, 255, 255, 0.4);
+  width: 40%;
   margin-top: 2.25rem;
-  padding: .75rem 1.5rem;
-  font-size: 2rem; }
+  padding: .75rem 1.5rem; }
   .entry-title a {
     color: #fff;
     text-decoration: none;
     max-width: 75%; }
+    .entry-title ahover {
+      color: blue; }
 
 .entry-meta {
   position: absolute;
@@ -1272,6 +1283,20 @@ img.logo-footer {
     color: white;
     text-decoration: none; }
 
+.entry-content p {
+  color: black;
+  margin-bottom: 1.5rem; }
+
 .single
 .content-area {
   padding-top: 5rem; }
+
+.entry-footer {
+  text-align: center; }
+  .entry-footer span {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #9ab899; }
+    .entry-footer span a {
+      color: #9ab899;
+      padding-left: 1rem; }

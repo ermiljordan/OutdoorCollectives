@@ -5,19 +5,21 @@
   margin-right: auto;
   margin-left: auto;
   width: auto;  
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 .entry-title {
   position: absolute;
-  background: #9ab899;
-  width: 60%;
+  background: rgba(255, 255, 255, 0.4);
+  width: 40%;
   margin-top: 2.25rem;
   padding: .75rem 1.5rem;
-  font-size: 2rem;
   a {
     color: #fff;
     text-decoration: none;
     max-width: 75%;
+    &hover {
+      color: blue;
+    }
   }
 }
 .entry-meta {
@@ -31,9 +33,28 @@
     text-decoration: none;
   }
 }
-
+.entry-content {
+  p {
+    color: black;
+    margin-bottom: 1.5rem;
+  }
+}
 //SINGLE FORUM
 .single 
 .content-area {
   padding-top: 5rem;
+}
+
+//BLOG FOOTER
+.entry-footer {
+  text-align: center;
+  span {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #9ab899;
+    a {
+      color: #9ab899;
+      padding-left: 1rem;
+    }
+  }
 }

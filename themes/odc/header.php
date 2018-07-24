@@ -31,7 +31,6 @@
 			<div class="header-background">
 				<div class="header">
 					<a href="<?php echo esc_url( home_url('/') ); ?>"><img class="logo-header" src="<?php echo get_template_directory_uri(); ?>/images/outdoorCollectiveLogo.svg"></a>
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'odc' ); ?></button>
 					<?php
 					wp_nav_menu( array(
 						'theme_location' => 'menu-1',
