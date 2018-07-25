@@ -22,5 +22,8 @@ img.logo-footer {
     color: white;
     text-align: center;
     margin-right: .8rem;
+    &:hover {
+      color: #de4d61;
+    }
   }
 }
