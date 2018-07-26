@@ -1099,8 +1099,7 @@ img.logo-header {
 
 .container {
   max-width: 100%;
-  margin: 0 auto;
-  padding-bottom: 2rem; }
+  margin: 0 auto; }
   @media (min-width: 1240px) {
     .container {
       padding: 0 10%; } }
@@ -1385,7 +1384,7 @@ img.logo-footer {
   @media (min-width: 1240px) {
     .blog
 .content-area {
-      max-width: 1240px; } }
+      max-width: 1000px; } }
 
 .entry-title {
   position: absolute;
@@ -1404,20 +1403,7 @@ img.logo-footer {
       color: #de4d61; }
 
 .entry-meta {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.4);
-  color: #fff;
-  display: inline-block;
-  right: 0; }
-  @media (min-width: 1240px) {
-    .entry-meta {
-      -webkit-transform: translateX(-32%);
-              transform: translateX(-32%);
-      padding-left: 1rem;
-      padding-right: 1rem; } }
-  .entry-meta a {
-    color: white;
-    text-decoration: none; }
+  display: none; }
 
 .entry-content p {
   color: black;
