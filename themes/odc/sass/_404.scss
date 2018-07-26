@@ -1,0 +1,14 @@
+.error-404 {
+  background-image: url('images/ocImages/campfire-404.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
