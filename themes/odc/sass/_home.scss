@@ -9,6 +9,12 @@
     height: 100vh
   }
 }
+.logo-sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 img.logo-circle {
   height: 15rem;
   width: auto;
@@ -51,6 +57,7 @@ img.logo-circle {
       display: flex;
       justify-content: center;
       flex-direction: column;
+      height: 50vh;
     }
   }
 
@@ -125,8 +132,14 @@ img.logo-circle {
     }
   // STARY-NIGHT 
 .stary-nights {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom: 1px solid white;
   text-align: center;
+  @include desktop {
+    height: 50vh;
+  }
   h3 {
   margin: 0 auto;
   padding-top: 4rem;
@@ -149,7 +162,12 @@ img.logo-circle {
     @include desktop {
       display: flex;
       justify-content: center;
+      align-items: center;
       width: 50%;
+      height: 100vh;
+      h2 {
+        padding-bottom: 0;
+      }
     }
   }
 }
@@ -159,7 +177,10 @@ img.logo-circle {
       display: none;
     }
     @include desktop {
-      display: unset;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 50%;
       background-color: #222222;
       padding-top: 3rem;
