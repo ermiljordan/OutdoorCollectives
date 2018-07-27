@@ -9,6 +9,16 @@
     height: 100vh
   }
 }
+img.logo-circle {
+  height: 15rem;
+  width: auto;
+  @include tablet {
+    height: 25rem;
+  }
+  @include desktop {
+    height: 18rem;
+  }
+}
 .sub-caption {
   font-family: 'Playfair Display';
   font-weight: bold;
@@ -16,33 +26,23 @@
   text-align: center;
   text-transform: capitalize;
   color: #9ab899;
+  @include tablet {
+    font-size: 2rem;
+  }
   a {
     color: #9ab899;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: normal;
     font-style: italic;
+    @include tablet {
+      font-size: 2rem;
+    }
     &:hover {
       color: #de4d61
     }
   }
 }
-.logo-banner {
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem;
-  margin-bottom: 2rem;
-}
-
-
-img.logo-circle {
-  height: 15rem;
-  width: auto;
-  @include desktop {
-    height: 18rem;
-  }
-}
-
   // ABOUT ZYPHER 
   .about-zypher {
     border-top: 3px solid white;
@@ -53,15 +53,15 @@ img.logo-circle {
       flex-direction: column;
     }
   }
-  .about-text {
-    width: 720px;
-  }
+
 
   // OUR TENTS
   .zypher-tents {
     padding: 3.5rem 0 2rem;
     .tents-text {
-      width: 720px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 2%;
     }
   }
   .zypher-tents {
@@ -144,6 +144,7 @@ img.logo-circle {
   display: flex;
   text-align: center;
   .adventure-photos {
+    width: 100%;
     padding: 3.5rem 0 2rem;
     @include desktop {
       display: flex;

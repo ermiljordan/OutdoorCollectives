@@ -30,14 +30,11 @@
   font-size: 1.5rem;
   border-bottom: 1px solid #fff;
   @include tablet {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 .sub-par {
   padding-bottom: 3rem;
-  @include window {
-    width: 50%;
-  }
 }
 .mc4wp-form-fields p {
   display: flex;

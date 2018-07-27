@@ -32,7 +32,7 @@ get_header(); ?>
 		</div>
 	</section>
 	<section class="zypher-tents">
-		<div class="tents-text container">
+		<div class="tents-text">
 		<h2>Our Tents</h2>
 				<ul>
 					<li>
