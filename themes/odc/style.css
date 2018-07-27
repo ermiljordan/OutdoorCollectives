@@ -1416,6 +1416,10 @@ img.logo-footer {
     border: 1px solid #9ab899;
     padding: 1rem; }
 
+.logged-in-as a {
+  text-decoration: none;
+  color: #9ab899; }
+
 .entry-footer {
   text-align: center; }
   .entry-footer span {
@@ -1424,7 +1428,7 @@ img.logo-footer {
     color: #9ab899; }
     .entry-footer span a {
       color: #9ab899;
-      padding-left: 1rem; }
+      padding-left: .5rem; }
 
 .form-submit {
   padding-bottom: 3rem; }
