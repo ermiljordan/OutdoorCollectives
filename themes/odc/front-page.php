@@ -25,54 +25,63 @@ get_header(); ?>
 					</div><!--NEWS LETTER-->
 				</div><!--Logo banner-->
       </section><!--HERO BANNER--> 
-	<section class="about-zypher container">
+	<section class="about-zypher">
+		<div class="about-text container">
 			<h2>Zephyr Air Frame Tent</h2>
 				<?php echo CFS()->get('zypher_air_frame_cap'); ?>
+		</div>
 	</section>
-	<section class="zypher-tents container-tent">
+	<section class="zypher-tents">
+		<div class="tents-text container">
 		<h2>Our Tents</h2>
-<ul>
-	<li>
-		<div class="thumbnail-tents">
-			<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
+				<ul>
+					<li>
+						<div class="thumbnail-tents">
+							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
+						</div>
+							<div class="content container">
+								<h3>Zephyr II</h3>
+									<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
+							</div>
+					</li>
+					<li>
+						<div class="thumbnail-tents">
+							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
+						</div>
+							<div class="content container">
+								<h3>Zephyr IV</h3>
+									<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
+							</div>	
+					</li>
+					<li>
+						<div class="thumbnail-tents">
+							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
+						</div>	
+							<div class="content container">
+								<h3>Zephyr VIII</h3>
+									<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
+							</div>
+					</li>
+				</ul>
 		</div>
-			<div class="content">
-				<h3>Zephyr II</h3>
-					<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
-			</div>
-	</li>
-	<li>
-		<div class="thumbnail-tents">
-			<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
-		</div>
-			<div class="content">
-				<h3>Zephyr IV</h3>
-					<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
-			</div>	
-	</li>
-	<li>
-		<div class="thumbnail-tents">
-			<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
-		</div>	
-			<div class="content">
-				<h3>Zephyr VIII</h3>
-					<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
-			</div>
-	</li>
-</ul>
 	</section>
 	<section class="stary-nights">
-	<?php echo CFS()->get( 'stary_captions' ); ?>
+		<div class="stary-caption container">
+			<?php echo CFS()->get( 'stary_captions' ); ?>
+		</div>
 	</section>
 	<section class="adventure">
-		<div class="adventure-photos">
-		<?php echo CFS()->get ('adventure_caption' ); ?>
-		<div class="adventure-cap">
-		<?php echo CFS()->get ( 'adventure_content' ); ?>
-		</div>
-		</div>
-		<div class="right-caption">
-		<?php echo CFS()->get ( 'adventure_content' ); ?>
+			<div class="adventure-photos">
+				<div class="container">
+					<?php echo CFS()->get ('adventure_caption' ); ?>
+					<div class="adventure-cap">
+					<?php echo CFS()->get ( 'adventure_content' ); ?>
+				</div>
+			</div>
+			</div>
+			<div class="right-caption container">
+			<?php echo CFS()->get ( 'adventure_content' ); ?>
+			</div>
 		</div>
 	</section>
 	</main><!-- #main -->

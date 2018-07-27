@@ -14,6 +14,7 @@
 .container {
   max-width: 100%;
   margin: 0 auto;
+  padding: 0 2%;
   @include desktop {
     padding: 0 10%;
   }
@@ -35,12 +36,10 @@ h2 {
   font-style: normal;
   font-size: 1.5rem;
   text-transform: uppercase;
-  margin: 0 auto;
   text-align: center;
   color: #A6B49B;
-  padding-top: 2rem;
   padding-bottom: 2rem;
-  max-width: 80%;
+  margin: 0 auto;
   @include tablet {
     font-size: 2.4rem;
   }
@@ -49,15 +48,14 @@ h2 {
   }
 }
 p {
-  font-size: 15px;
-  max-width: 80%;
+  font-size: 1.2rem;
   font-family: 'Raleway';
   font-weight: 300;
   font-style: normal;
   margin: 0 auto;
   color: white;
   text-align: center;
-  line-height: 1;
+  line-height: 1.5rem;
   @include tablet {
     font-size: 1.5rem;
     line-height: 1.1;
