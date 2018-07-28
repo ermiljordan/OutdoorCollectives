@@ -1,97 +1,102 @@
-// .blog 
-// .content-area {
-//   display: flex;
-//   flex-direction: column;
-//   margin-right: auto;
-//   margin-left: auto;
-//   width: auto;  
-//   padding-top: 4rem;
-//   @include desktop{
-//     max-width: 1000px;
-//   }
-// }
+.blog 
+.content-area {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;  
+  padding-top: 4rem;
+  @include desktop{
+    max-width: 1000px;
+  }
+}
 
-// .entry-title {
-//   position: absolute;
-//   background: rgba(255, 255, 255, 0.4);
-//   width: 40%;
-//   margin-top: 2.25rem;
-//   padding: .75rem 1.5rem;
-//   @include desktop {
-//     width: 20%;
-//   }
-//   a {
-//     color: #fff;
-//     text-decoration: none;
-//     max-width: 75%;
-//     &:hover {
-//       color: #de4d61;
-//     }
-//   }
-// }
-// .entry-meta {
-// display: none;
-// }
-// .entry-content {
-//   p {
-//     color: black;
-//     margin-bottom: 1.5rem;
-//   }
-// }
-// //SINGLE FORUM
-// .single 
-// .content-area {
-//   padding-top: 4rem;
-//   @include desktop{
-//     max-width: 1240px;
-//     margin: 0 auto;
-//   }
-// }
-// .entry-header h1 {
-//   color: #ffff;
-//   text-align: center;
-// }
-// .nav-links {
-//   text-transform: uppercase;
-//   a {
-//     color: #9ab899;
-//     text-decoration: none;
-//     margin-left: 1rem;
-//     margin-right: 1rem;
-//     border: 1px solid #9ab899;
-//     padding: 1rem;
-//   }
-// }
-// .logged-in-as a {
-//   text-decoration: none;
-//   color: #9ab899
-// }
-// .comment-form-comment {
-//   padding: 0 2%;
-// }
-// //BLOG FOOTER
-// .entry-footer {
-//   text-align: center;
-//   span {
-//     text-transform: uppercase;
-//     font-size: 13px;
-//     color: #9ab899;
-//     a {
-//       color: #9ab899;
-//       padding-left: .5rem;
-//     }
-//   }
-// }
-// .form-submit {
-//   padding-bottom: 3rem;
-//   input.submit {
-//     background:#9ab899;
-//     border-color: #9ab899;
-//     padding: 1rem;
-//     color: #fff;
-//     text-transform: uppercase;
-//   }
-// }
-// .comment-form {
-//   display: none;
-// }
+.entry-title {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  width: 40%;
+  margin-top: 2.25rem;
+  padding: .75rem 1.5rem;
+  @include desktop {
+    width: 20%;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    max-width: 75%;
+    &:hover {
+      color: #de4d61;
+    }
+  }
+}
+.entry-meta {
+display: none;
+}
+.entry-content {
+  p {
+    color: black;
+    margin-bottom: 1.5rem;
+  }
+}
+//SINGLE FORUM
+.single 
+.content-area {
+  padding-top: 4rem;
+  @include desktop{
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+}
+.entry-header h1 {
+  color: #ffff;
+  text-align: center;
+}
+.nav-links {
+  text-transform: uppercase;
+  a {
+    color: #9ab899;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid #9ab899;
+    padding: 1rem;
+  }
+}
+.logged-in-as a {
+  text-decoration: none;
+  color: #9ab899
+}
+.comment-form-comment {
+  padding: 0 2%;
+}
+//BLOG FOOTER
+.entry-footer {
+  text-align: center;
+  span {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #9ab899;
+    a {
+      color: #9ab899;
+      padding-left: .5rem;
+    }
+  }
+}
+.form-submit {
+  padding-bottom: 3rem;
+  input.submit {
+    background:#9ab899;
+    border-color: #9ab899;
+    padding: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+.comments-area {
+  display: none;
+}
+.type-post {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 2%;
+}

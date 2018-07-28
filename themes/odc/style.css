@@ -1178,7 +1178,7 @@ h2 {
       font-size: 2.5rem; } }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: 'Raleway';
   font-weight: 300;
   font-style: normal;
@@ -1403,6 +1403,104 @@ img.logo-footer {
   text-transform: uppercase; }
   .mc4wp-form-fields input[type="submit"]:hover {
     background-color: #404040; }
+
+.blog
+.content-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
+  padding-top: 4rem; }
+  @media (min-width: 1240px) {
+    .blog
+.content-area {
+      max-width: 1000px; } }
+
+.entry-title {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  width: 40%;
+  margin-top: 2.25rem;
+  padding: .75rem 1.5rem; }
+  @media (min-width: 1240px) {
+    .entry-title {
+      width: 20%; } }
+  .entry-title a {
+    color: #fff;
+    text-decoration: none;
+    max-width: 75%; }
+    .entry-title a:hover {
+      color: #de4d61; }
+
+.entry-meta {
+  display: none; }
+
+.entry-content p {
+  color: black;
+  margin-bottom: 1.5rem; }
+
+.single
+.content-area {
+  padding-top: 4rem; }
+  @media (min-width: 1240px) {
+    .single
+.content-area {
+      max-width: 1240px;
+      margin: 0 auto; } }
+
+.entry-header h1 {
+  color: #ffff;
+  text-align: center; }
+
+.nav-links {
+  text-transform: uppercase; }
+  .nav-links a {
+    color: #9ab899;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid #9ab899;
+    padding: 1rem; }
+
+.logged-in-as a {
+  text-decoration: none;
+  color: #9ab899; }
+
+.comment-form-comment {
+  padding: 0 2%; }
+
+.entry-footer {
+  text-align: center; }
+  .entry-footer span {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #9ab899; }
+    .entry-footer span a {
+      color: #9ab899;
+      padding-left: .5rem; }
+
+.form-submit {
+  padding-bottom: 3rem; }
+  .form-submit input.submit {
+    background: #9ab899;
+    border-color: #9ab899;
+    padding: 1rem;
+    color: #fff;
+    text-transform: uppercase; }
+
+.comments-area {
+  display: none; }
+
+.type-post {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 2%; }
 
 .error-404 {
   background-image: url("images/ocImages/campfire-404.jpg");
