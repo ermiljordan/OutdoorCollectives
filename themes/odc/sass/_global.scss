@@ -1,16 +1,4 @@
-// body {
-//   display: flex;
-//   justify-content: center;
-//   min-height: 100vh;
-// }
-// // .site {
-// //   flex: 1 0 auto;
-// // }
-// // .site-content {
-// //   /*padding-top: 50px;*/
-// //   margin-left: auto;
-// //   margin-right: auto;
-// // }
+
 .container {
   max-width: 100%;
   margin: 0 auto;
@@ -84,66 +72,3 @@ p {
     display: none;
     padding-right: 4px;
   }
-
-  // .wpcf7-form p{
-  //   display: flex;
-  //   max-width: none;
-  //   .wpcf7-email {
-  //     width: 225px;
-  //     color: #de4d61; 
-  //     @include desktop {
-  //       width: 331px;
-  //     }
-  //   }
-  // }
-  // // .wpcf7-submit {
-  // //   border-radius: 30px;
-  // //   transform: translateX(-100%);
-  // //   input[type="submit"] {
-  // //     border: none;
-  // //     background: #A6B49B;
-  // //     color: white;
-  // //   }
-  // // }
-  // .wpcf7-form-control-wrap {
-  //   width: 100%;
-  // }
-  // input.wpcf7-submit {
-  //   padding-left: 4px;
-  //   border: none;
-  //   background: #A6B49B;
-  //   color: white;
-  //   text-transform: uppercase;
-  // }
-  
-  // FANCY LINES
-
-  // .fancy {
-  //   line-height: 0.5;
-  //   text-align: center;
-  // }
-  // .fancy span {
-  //   display: inline-block;
-  //   position: relative;  
-  // }
-  // .fancy span:before,
-  // .fancy span:after {
-  //   content: "";
-  //   position: absolute;
-  //   height: 5px;
-  //   border-bottom: 1px solid black;
-  //   border-top: 1px solid black;
-  //   top: 0;
-  //   width: 55px;
-  //   @include tablet {
-  //     width: 100px;
-  //   }
-  // }
-  // .fancy span:before {
-  //   right: 100%;
-  //   margin-right: 15px;
-  // }
-  // .fancy span:after {
-  //   left: 100%;
-  //   margin-left: 15px;
-  // }

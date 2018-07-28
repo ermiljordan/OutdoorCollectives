@@ -1,6 +1,11 @@
-.header-background {
-  background: rgba(255, 255, 255, 0.4);
-  width: 100vw;
+
+.site-header {
+  background-color: hsla(0,0%,100%,.85);
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  transition: top .5s linear;
+  width: 100%;
+  z-index: 3;
 }
 .header {
   width: 100vw;
@@ -28,13 +33,17 @@ img.logo-header {
   height: 50px;
 }
 .site-header.reverse-header {
-  background-color: transparent;
+  background-color: hsla(0,0%,100%,.85);
   border-bottom: 0;
-  position: absolute;
+  position: fixed;
+  text-shadow: 1px 1px 2px #323232;
 }
 .menu-menu-1-container ul {
   display: unset;
   a {
     color: #9ab899;
   }
+}
+body.down header.clone {
+  top: 0;
 }
