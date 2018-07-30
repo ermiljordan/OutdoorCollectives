@@ -1433,8 +1433,7 @@ img.logo-footer {
     .single
 .content-area {
       max-width: 1240px;
-      margin: 0 auto;
-      padding: 0 2%; } }
+      margin: 0 auto; } }
 
 .entry-header h1 {
   color: #ffff;
