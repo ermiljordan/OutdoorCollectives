@@ -9,6 +9,12 @@
     height: 100vh
   }
 }
+.menu-item a {
+  transition: all 0.25s ease-in-out; 
+  &:hover {
+    color: #de4d61;
+  }
+}
 .logo-sub {
   display: flex;
   justify-content: center;

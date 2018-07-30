@@ -18,9 +18,9 @@
 			<div class="social-md">
 				<ul>
 					<li class="icon-media">
-						<a href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
-						<a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-						<a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+						<a href="https://www.facebook.com/outdoorcollectiveinc/" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/outdoorcollectiveinc/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+						<a href="https://www.youtube.com/channel/UCiJZwmi-eEyksD7npR426mQ" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a>
 					</li>
 				</ul>
 			</div><!--Social media-->
