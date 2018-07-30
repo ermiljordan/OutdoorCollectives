@@ -894,6 +894,8 @@ img.logo-circle {
     .sub-caption {
       font-size: 2rem; } }
   .sub-caption a {
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     color: #9ab899;
     text-decoration: none;
     font-size: 1.5rem;
@@ -1404,33 +1406,12 @@ img.logo-footer {
   .mc4wp-form-fields input[type="submit"]:hover {
     background-color: #404040; }
 
-.blog
-.content-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: auto;
-  margin-left: auto;
-  width: auto;
-  padding-top: 4rem; }
-  @media (min-width: 1240px) {
-    .blog
-.content-area {
-      max-width: 1000px; } }
-
 .entry-title {
   position: absolute;
   background: rgba(255, 255, 255, 0.4);
-  width: 40%;
+  width: auto;
   margin-top: 2.25rem;
   padding: .75rem 1.5rem; }
-  @media (min-width: 1240px) {
-    .entry-title {
-      width: 20%; } }
   .entry-title a {
     color: #fff;
     text-decoration: none;
@@ -1452,7 +1433,8 @@ img.logo-footer {
     .single
 .content-area {
       max-width: 1240px;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      padding: 0 2%; } }
 
 .entry-header h1 {
   color: #ffff;
@@ -1476,14 +1458,7 @@ img.logo-footer {
   padding: 0 2%; }
 
 .entry-footer {
-  text-align: center; }
-  .entry-footer span {
-    text-transform: uppercase;
-    font-size: 13px;
-    color: #9ab899; }
-    .entry-footer span a {
-      color: #9ab899;
-      padding-left: .5rem; }
+  display: none; }
 
 .form-submit {
   padding-bottom: 3rem; }
@@ -1499,8 +1474,31 @@ img.logo-footer {
 
 .type-post {
   max-width: 100%;
-  margin: 0 auto;
-  padding: 0 2%; }
+  margin: 0 auto; }
+
+@media (min-width: 950px) {
+  .site-main {
+    grid-area: main; } }
+
+.blog .site-main {
+  padding-top: 5rem; }
+  @media (min-width: 950px) {
+    .blog .site-main {
+      display: grid;
+      max-width: none;
+      grid-gap: 8px;
+      grid-template-columns: repeat(2, 1fr);
+      background: #cccccc;
+      margin: 0 auto; } }
+  @media (min-width: 1240px) {
+    .blog .site-main {
+      grid-template-columns: repeat(3, 1fr); } }
+
+.blog header {
+  position: absolute; }
+
+article.post {
+  background: white; }
 
 .error-404 {
   background-image: url("images/ocImages/campfire-404.jpg");

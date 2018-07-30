@@ -1,25 +1,23 @@
-.blog 
-.content-area {
-  display: flex;
-  flex-direction: column;
-  margin-right: auto;
-  margin-left: auto;
-  width: auto;  
-  padding-top: 4rem;
-  @include desktop{
-    max-width: 1000px;
-  }
-}
+// .blog 
+// .content-area {
+//   display: flex;
+//   flex-direction: column;
+//   margin-right: auto;
+//   margin-left: auto;
+//   width: auto;  
+//   padding-top: 4rem;
+//   @include desktop{
+//     max-width: 1240px;
+//   }
+// }
 
 .entry-title {
   position: absolute;
   background: rgba(255, 255, 255, 0.4);
-  width: 40%;
+  width: auto;
   margin-top: 2.25rem;
   padding: .75rem 1.5rem;
-  @include desktop {
-    width: 20%;
-  }
+
   a {
     color: #fff;
     text-decoration: none;
@@ -45,6 +43,7 @@ display: none;
   @include desktop{
     max-width: 1240px;
     margin: 0 auto;
+    padding: 0 2%;
   }
 }
 .entry-header h1 {
@@ -71,16 +70,7 @@ display: none;
 }
 //BLOG FOOTER
 .entry-footer {
-  text-align: center;
-  span {
-    text-transform: uppercase;
-    font-size: 13px;
-    color: #9ab899;
-    a {
-      color: #9ab899;
-      padding-left: .5rem;
-    }
-  }
+  display: none;
 }
 .form-submit {
   padding-bottom: 3rem;
@@ -98,5 +88,31 @@ display: none;
 .type-post {
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 2%;
+}
+.site-main {
+  @include screen {
+    grid-area: main;
+  }
+}
+.blog .site-main {
+  padding-top: 5rem;
+  @include screen {
+    display: grid;
+    max-width: none;
+    grid-gap: 8px;
+    grid-template-columns: repeat(2, 1fr);
+    background: #cccccc;
+    margin: 0 auto;
+  }
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+}
+.blog header {
+  position: absolute;
+}
+article.post {
+  background: white;
+
 }
