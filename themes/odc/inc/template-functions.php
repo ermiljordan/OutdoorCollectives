@@ -78,8 +78,8 @@ function odc_dynamic_css() {
 					background:
 					linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
 					url({$subs}) no-repeat center bottom;
-					background-size: cover, cover;
-					height: 100vh;	
+					background-size: cover;
+					height: 100vh;
 				};";
 					break;
 					default:

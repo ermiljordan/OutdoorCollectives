@@ -37,29 +37,29 @@ get_header(); ?>
 				<ul>
 					<li>
 						<div class="thumbnail-tents">
-							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
+							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/zephyr2.png">
 						</div>
 							<div class="content container">
 								<h3>Zephyr II</h3>
-									<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
+								<?php echo CFS()->get ('zephyr_2');?>
 							</div>
 					</li>
 					<li>
 						<div class="thumbnail-tents">
-							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
+							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/zephyr4.png">
 						</div>
 							<div class="content container">
 								<h3>Zephyr IV</h3>
-									<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
+								<?php echo CFS()->get ('zephyr_4');?>							
 							</div>	
 					</li>
 					<li>
 						<div class="thumbnail-tents">
-							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/night-camp.JPG">
+							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/zephyr8.png">
 						</div>	
 							<div class="content container">
 								<h3>Zephyr VIII</h3>
-									<p>The Zephyr aims to resolve the many traditional challenges faced by campers through an all-in-one solution. Based on the most advanced Air Frame system that exists in the world today</p>
+								<?php echo CFS()->get ('zephyr_8');?>							
 							</div>
 					</li>
 				</ul>

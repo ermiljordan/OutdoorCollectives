@@ -14,9 +14,9 @@ get_header();
       <section class="sub-background">
         <div class="sub-text container">
           <h2 class="italic">First<span class="bold">look</span></h2>
-          <h3 class="sub-cap"><?php echo CFS()->get('expert_camper'); ?></h3>
-          <p class="sub-par"><?php echo CFS()->get('subscribe_par'); ?></p>
-          <?php echo do_shortcode('[mc4wp_form id="38"]'); ?> 
+          <?php echo CFS()->get('expert_camper'); ?>
+          <?php echo CFS()->get('subscribe_par'); ?>
+          <?php echo do_shortcode('[mc4wp_form id="25"]'); ?> 
         </div>
       </section>
 		</main><!-- #main -->
