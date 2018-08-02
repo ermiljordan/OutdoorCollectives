@@ -15,22 +15,26 @@
     color: #de4d61;
   }
 }
+.home-subscribe {
+  color: #9ab899;
+  margin: 0;
+  padding-top: 2rem;
+}
+.zephyr-tent-cap {
+  font-size: 1.9rem;
+  color: #9ab899;
+  text-transform: uppercase;
+  @include tablet {
+    font-size: 3rem;
+  }
+}
 .logo-sub {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-img.logo-circle {
-  height: 15rem;
-  width: auto;
-  @include tablet {
-    height: 25rem;
-  }
-  @include desktop {
-    height: 18rem;
-  }
-}
+
 .sub-caption {
   font-family: 'Playfair Display';
   font-weight: bold;
@@ -56,7 +60,15 @@ img.logo-circle {
     }
   }
 }
+.newsletter {
+  @include desktop {
+  width: 34rem;
+  }
+}
   // ABOUT ZYPHER 
+  .about-text {
+    width: 720px;
+  }
   .about-zypher {
     border-top: 3px solid white;
     padding: 3.5rem 0 2rem;
@@ -64,7 +76,6 @@ img.logo-circle {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      height: 50vh;
     }
   }
 
@@ -136,8 +147,11 @@ img.logo-circle {
     }
     .content p{
       color: black;
-      padding-bottom: 2rem;
+      line-height: 1.2;
     }
+ #padding {
+   padding-bottom: 3rem;
+ }
   // STARY-NIGHT 
 .stary-nights {
   display: flex;
@@ -190,9 +204,11 @@ img.logo-circle {
       align-items: center;
       justify-content: center;
       width: 50%;
-      background-color: #222222;
       padding-top: 3rem;
       padding-bottom: 3rem;
+      p {
+        color: #000
+      }
     }
   }
   .adventure-cap {

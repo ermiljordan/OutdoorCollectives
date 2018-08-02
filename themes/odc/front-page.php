@@ -16,19 +16,20 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
       <section class="hero-banner">
-				<div class="logo-sub">
+				<div class="logo-sub container">
 					<div class="logo-banner">
-						<img class="logo-circle" src="<?php echo get_template_directory_uri(); ?>/images/outdoorCollectiveMiddle.svg" alt="outdoor collective">
+						<h1 class="zephyr-tent-cap">Zephyr Air Frame Tent</h1>
 					</div>
 					<div class="newsletter">
-						<p class="sub-caption"><a href="<?php the_permalink(13); ?>">Sign-up</a> for subscription</p>					
+						<?php echo CFS()->get('hero_banner_caption'); ?>	
 					</div><!--NEWS LETTER-->
+					<h3 class="home-subscribe">Subscribe</h3>
+					<?php echo do_shortcode('[mc4wp_form id="25"]'); ?> 
 				</div><!--Logo banner-->
       </section><!--HERO BANNER--> 
 	<section class="about-zypher">
 		<div class="about-text container">
-			<h2>Zephyr Air Frame Tent</h2>
-				<?php echo CFS()->get('zypher_air_frame_cap'); ?>
+				<?php echo CFS()->get('zephyr_info'); ?>
 		</div>
 	</section>
 	<section class="zypher-tents">
@@ -39,7 +40,7 @@ get_header(); ?>
 						<div class="thumbnail-tents">
 							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/zephyr2.png">
 						</div>
-							<div class="content container">
+							<div id="padding" class="content container">
 								<h3>Zephyr II</h3>
 								<?php echo CFS()->get ('zephyr_2');?>
 							</div>
@@ -48,7 +49,7 @@ get_header(); ?>
 						<div class="thumbnail-tents">
 							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/zephyr4.png">
 						</div>
-							<div class="content container">
+							<div id="padding" class="content container">
 								<h3>Zephyr IV</h3>
 								<?php echo CFS()->get ('zephyr_4');?>							
 							</div>	
@@ -57,7 +58,7 @@ get_header(); ?>
 						<div class="thumbnail-tents">
 							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/zephyr8.png">
 						</div>	
-							<div class="content container">
+							<div id="padding" class="content container">
 								<h3>Zephyr VIII</h3>
 								<?php echo CFS()->get ('zephyr_8');?>							
 							</div>

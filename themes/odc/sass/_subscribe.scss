@@ -9,10 +9,13 @@
   padding: 5.5rem 0 2rem;
   p {
     padding-bottom: 3rem;
+    @include desktop {
+      width: 43rem;
+    }
   }
 }
 .italic {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'Playfair Display';
   font-weight: normal;
   font-style: italic;
@@ -43,11 +46,22 @@
   align-items: center;
 }
 .mc4wp-form-fields input[type="submit"] {
+  height: 34px;
+  width: auto;
   background-color: #9ab899;
   border: 0;
   color: #fff;
   text-transform: uppercase;
   &:hover {
     background-color: #404040;
+  }
+  @include desktop {
+    width: 16rem;
+  }
+}
+.mc4wp-form-fields input {
+  margin-bottom: 1px;
+  @include desktop {
+    width: 18rem;
   }
 }

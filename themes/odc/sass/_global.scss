@@ -19,7 +19,6 @@
   }
 }
 h2 {
-  font-family:'Novecento';
   font-weight: 600;
   font-style: normal;
   font-size: 1.5rem;
@@ -51,8 +50,8 @@ p {
   text-align: center;
   line-height: 1.5rem;
   @include tablet {
-    font-size: 1.5rem;
-    line-height: 1.1;
+    font-size: 1.1rem;
+    line-height: 1.5;
   }
   @include window {
     font-size: 1.2rem;
@@ -62,7 +61,6 @@ p {
   }
 } 
   h3 {
-    font-family: 'Merriweather';
     font-weight: bold;
     font-style: normal;
     color: #2a373c;

@@ -112,7 +112,9 @@ display: none;
 .blog header {
   position: absolute;
 }
-article.post {
+.blog .post {
   background: white;
-
+  @include desktop {
+    height: 45em;
+  }
 }
