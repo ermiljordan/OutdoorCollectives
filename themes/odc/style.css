@@ -1461,6 +1461,7 @@ img.logo-footer {
       margin-left: 1.75px; } }
 
 .mc4wp-form-fields input {
+  color: #de4d61;
   margin-bottom: 1px; }
   @media (min-width: 1240px) {
     .mc4wp-form-fields input {
