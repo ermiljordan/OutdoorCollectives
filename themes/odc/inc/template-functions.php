@@ -48,7 +48,7 @@ function odc_dynamic_css() {
 		$custom_css = "
 					.hero-banner {
 						background:
-						linear-gradient( to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.9) 100% ),
+						linear-gradient( to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.9) 100% ),
 						url({$hero}) no-repeat center bottom;
 						background-size: cover, cover; 	
 					}
