@@ -16,16 +16,16 @@
   }
 }
 .home-subscribe {
-  color: #9ab899;
+  color: #de4d61;
   margin: 0;
   padding-top: 2rem;
 }
 .zephyr-tent-cap {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   color: #9ab899;
   text-transform: uppercase;
   @include tablet {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 .logo-sub {
@@ -71,7 +71,7 @@
   }
   .about-zypher {
     border-top: 3px solid white;
-    padding: 3.5rem 0 2rem;
+    padding: 3.5rem 0 3.5rem;
     @include desktop {
       display: flex;
       justify-content: center;

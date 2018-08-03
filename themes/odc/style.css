@@ -865,17 +865,17 @@ object {
     color: #de4d61; }
 
 .home-subscribe {
-  color: #9ab899;
+  color: #de4d61;
   margin: 0;
   padding-top: 2rem; }
 
 .zephyr-tent-cap {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   color: #9ab899;
   text-transform: uppercase; }
   @media (min-width: 600px) {
     .zephyr-tent-cap {
-      font-size: 3rem; } }
+      font-size: 2.5rem; } }
 
 .logo-sub {
   display: -webkit-box;
@@ -925,7 +925,7 @@ object {
 
 .about-zypher {
   border-top: 3px solid white;
-  padding: 3.5rem 0 2rem; }
+  padding: 3.5rem 0 3.5rem; }
   @media (min-width: 1240px) {
     .about-zypher {
       display: -webkit-box;
@@ -1106,8 +1106,8 @@ img.tents {
   background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
-  -webkit-transition: top .5s linear;
-  transition: top .5s linear;
+  -webkit-transition: top .10s linear;
+  transition: top .10s linear;
   width: 100%;
   z-index: 3; }
 
@@ -1149,9 +1149,9 @@ img.logo-header {
   height: 50px; }
 
 .site-header.reverse-header {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: transparent;
   border-bottom: 0;
-  position: fixed; }
+  position: absolute; }
 
 .menu-menu-1-container ul {
   display: unset; }
@@ -1430,25 +1430,35 @@ img.logo-footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (min-width: 1240px) {
+    .mc4wp-form-fields p {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 
 .mc4wp-form-fields input[type="submit"] {
+  margin-top: 1.75px;
   height: 34px;
   width: auto;
-  background-color: #9ab899;
+  background-color: #de4d61;
   border: 0;
   color: #fff;
   text-transform: uppercase; }
   .mc4wp-form-fields input[type="submit"]:hover {
-    background-color: #404040; }
+    background-color: #c74153; }
   @media (min-width: 1240px) {
     .mc4wp-form-fields input[type="submit"] {
-      width: 16rem; } }
+      width: 9rem;
+      height: 33px;
+      margin-left: 1.75px; } }
 
 .mc4wp-form-fields input {
   margin-bottom: 1px; }
   @media (min-width: 1240px) {
     .mc4wp-form-fields input {
-      width: 18rem; } }
+      width: 14rem;
+      margin-right: 1px; } }
 
 .entry-title {
   position: absolute;
@@ -1482,6 +1492,7 @@ img.logo-footer {
       margin: 0 auto; } }
 
 .entry-header h1 {
+  text-transform: uppercase;
   color: #ffff;
   text-align: center; }
 
@@ -1518,15 +1529,14 @@ img.logo-footer {
   display: none; }
 
 .type-post {
-  max-width: 100%;
-  margin: 0 auto; }
+  max-width: 100%; }
 
 @media (min-width: 950px) {
   .site-main {
     grid-area: main; } }
 
 .blog .site-main {
-  padding-top: 5rem; }
+  padding: 5rem .75rem .75rem .75rem; }
   @media (min-width: 950px) {
     .blog .site-main {
       display: grid;
@@ -1539,11 +1549,15 @@ img.logo-footer {
     .blog .site-main {
       grid-template-columns: repeat(3, 1fr); } }
 
-.blog header {
+.blog entry-header {
+  position: absolute; }
+
+.site-main header {
   position: absolute; }
 
 .blog .post {
-  background: white; }
+  background: white;
+  margin: 0 auto; }
   @media (min-width: 1240px) {
     .blog .post {
       height: 45em; } }

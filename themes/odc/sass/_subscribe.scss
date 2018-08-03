@@ -44,24 +44,31 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  @include desktop {
+    flex-direction: row;
+  }
 }
 .mc4wp-form-fields input[type="submit"] {
+  margin-top: 1.75px;
   height: 34px;
   width: auto;
-  background-color: #9ab899;
+  background-color: #de4d61;
   border: 0;
   color: #fff;
   text-transform: uppercase;
   &:hover {
-    background-color: #404040;
+    background-color: #c74153;
   }
   @include desktop {
-    width: 16rem;
+    width: 9rem;
+    height: 33px;
+    margin-left: 1.75px;
   }
 }
 .mc4wp-form-fields input {
   margin-bottom: 1px;
   @include desktop {
-    width: 18rem;
+    width: 14rem;
+    margin-right: 1px;
   }
 }

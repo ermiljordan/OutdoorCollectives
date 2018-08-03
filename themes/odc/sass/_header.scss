@@ -3,7 +3,7 @@
   background-color: hsla(0,0%,100%,.85);
   border-bottom: 1px solid #e1e1e1;
   position: fixed;
-  transition: top .5s linear;
+  transition: top .10s linear;
   width: 100%;
   z-index: 3;
 }
@@ -33,9 +33,9 @@ img.logo-header {
   height: 50px;
 }
 .site-header.reverse-header {
-  background-color: hsla(0,0%,100%,.85);
+  background-color: transparent;
   border-bottom: 0;
-  position: fixed;
+  position: absolute;
 }
 .menu-menu-1-container ul {
   display: unset;

@@ -47,6 +47,7 @@ display: none;
   }
 }
 .entry-header h1 {
+  text-transform: uppercase;
   color: #ffff;
   text-align: center;
 }
@@ -87,7 +88,6 @@ display: none;
 }
 .type-post {
   max-width: 100%;
-  margin: 0 auto;
 }
 .site-main {
   @include screen {
@@ -95,7 +95,7 @@ display: none;
   }
 }
 .blog .site-main {
-  padding-top: 5rem;
+  padding: 5rem .75rem .75rem .75rem;
   @include screen {
     display: grid;
     max-width: none;
@@ -109,11 +109,16 @@ display: none;
     
   }
 }
-.blog header {
+
+.blog entry-header {
+  position: absolute;
+}
+.site-main header {
   position: absolute;
 }
 .blog .post {
   background: white;
+  margin: 0 auto;
   @include desktop {
     height: 45em;
   }
