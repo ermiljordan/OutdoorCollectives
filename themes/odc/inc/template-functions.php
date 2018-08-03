@@ -54,7 +54,7 @@ function odc_dynamic_css() {
 					}
 					.about-zypher {
 						background:
-						linear-gradient( to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 100% ),
+						linear-gradient( to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 100% ),
 						url({$zypher}) no-repeat center bottom;
 						background-size: cover, cover; 
 					}
