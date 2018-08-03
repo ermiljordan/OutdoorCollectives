@@ -7,6 +7,33 @@
   width: 100%;
   z-index: 3;
 }
+.site-header.reverse-header {
+  background-color: transparent;
+  border-bottom: 0;
+  position: absolute;
+  h1 {
+    background: url(images/outdoorCollectiveHead.svg) no-repeat;
+    background-size: 142px 42px;
+  }
+  .menu-menu-1-container ul {
+    display: unset;
+    a {
+      color: #fff;
+    }
+  }
+}
+.site-header h1{
+  background: url(images/outdoorCollectiveLogo.svg) no-repeat;
+  background-size: 142px 42px;
+  height: 42px;
+  width: 165px;
+  margin: 0;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: #9ab899;
+
+}
 .header {
   width: 100vw;
   height: 65px;
@@ -24,19 +51,8 @@
 
   }
 }
-img.logo-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  height: 50px;
-}
-.site-header.reverse-header {
-  background-color: transparent;
-  border-bottom: 0;
-  position: absolute;
-}
+
+
 .menu-menu-1-container ul {
   display: unset;
   a {

@@ -30,7 +30,9 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<div class="header-background">
 				<div class="header container">
-					<a href="<?php echo esc_url( home_url('/') ); ?>"><img class="logo-header" src="<?php echo get_template_directory_uri(); ?>/images/outdoorCollectiveLogo.svg"></a>
+					<a href="<?php echo esc_url( home_url('/') ); ?>">
+					<h1 class="site-title">Outdoor Collective</h1>
+					</a>
 					<?php
 					wp_nav_menu( array(
 						'theme_location' => 'menu-1',
