@@ -922,6 +922,8 @@ object {
 
 .about-text {
   width: 720px; }
+  .about-text p {
+    line-height: 1; }
 
 .about-zypher {
   border-top: 3px solid white;
