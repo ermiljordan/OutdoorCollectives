@@ -156,6 +156,15 @@
  #padding {
    padding-bottom: 3rem;
  }
+.content {
+  h3::after {
+    content: '';
+    background: #e1e1e1;
+    display: block;
+    width: auto;
+    height: 2px;
+  }
+}
   // STARY-NIGHT 
 .stary-nights {
   display: flex;

@@ -1024,6 +1024,13 @@ img.tents {
 #padding {
   padding-bottom: 3rem; }
 
+.content h3::after {
+  content: '';
+  background: #e1e1e1;
+  display: block;
+  width: auto;
+  height: 2px; }
+
 .stary-nights {
   display: -webkit-box;
   display: -ms-flexbox;
