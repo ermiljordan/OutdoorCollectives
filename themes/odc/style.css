@@ -922,9 +922,9 @@ object {
     width: 34rem; } }
 
 .about-text {
-  width: 720px; }
+  width: 737px; }
   .about-text p {
-    line-height: 1; }
+    line-height: 1.2; }
 
 .about-zypher {
   border-top: 3px solid white;
@@ -1019,7 +1019,18 @@ img.tents {
 
 .content p {
   color: black;
-  line-height: 1.2; }
+  line-height: 1.2;
+  text-align: left;
+  padding-left: 15px; }
+
+.content p::before {
+  content: '\f192';
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: 'FontAwesome';
+  height: 1px;
+  width: 1px; }
 
 #padding {
   padding-bottom: 3rem; }
