@@ -1,3 +1,10 @@
+// IFRAME MOBILE and DESKTOP
+// .mobile-gone {
+//   display: none;
+//   @include desktop {
+//     display: unset;
+//   }
+// }
 // BANNER
 .home 
 .hero-banner {
@@ -169,15 +176,43 @@
  #padding {
    padding-bottom: 3rem;
  }
-.content {
-  h3::after {
-    content: '';
-    background: #e1e1e1;
-    display: block;
-    width: auto;
-    height: 2px;
-  }
-}
+ .zephyr-title {
+   position: relative;
+   display:inline-block;
+
+   &::before,
+   &::after {
+     content: '';
+     height: 20%;
+     display: block;
+     position: absolute;
+     @include desktop {
+       height: 15%;
+     }
+   }
+   &::before {
+     background: #fff;
+     z-index: -1;
+     right: -15px;
+     left: -15px;
+     height: 100%;
+   }
+   &::after {
+     background: #de4d61;
+     width: 96vw;
+     left: 50%;
+     top: 9px;
+     transform: translateX(-50%);
+     z-index: -2;
+     @include tablet {
+       width: 62.4vw;
+       top: 13px;
+     }
+     @include desktop {
+       width: 30.6vw;
+     }
+   }
+ }
   // STARY-NIGHT 
 .stary-nights {
   display: flex;

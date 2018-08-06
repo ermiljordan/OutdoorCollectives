@@ -1,6 +1,9 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+body {
+  text-align: center;
+}
 
 .container {
   max-width: 100%;
@@ -31,10 +34,10 @@ h2 {
   padding-bottom: 2rem;
   margin: 0 auto;
   @include tablet {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   @include window {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 a {

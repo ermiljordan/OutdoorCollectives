@@ -15,9 +15,9 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<section>
-				<iframe id="ytplayer" type="text/html" width="1880" height="760"
-								src="https://www.youtube.com/embed/bz3pzdPF4VQ?playlist=&version=3&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&rel=0&showinfo=0&start=00&color=white&iv_load_policy=3"
+			<section class="mobile-gone">
+				<iframe id="ytplayer" type="text/html" position:relative width="1780" height="760"
+								src="https://www.youtube.com/embed/bz3pzdPF4VQ?playlist=&version=3&autoplay=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&rel=0&showinfo=0&start=00&color=white&iv_load_policy=3"
 								frameborder="0" allowfullscreen>
 				</iframe>
 			</section>
@@ -50,7 +50,7 @@ get_header(); ?>
 							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/zephyr2.png">
 						</div>
 							<div id="padding" class="content container">
-								<h3>Zephyr II</h3>
+								<h3 class="zephyr-title">Zephyr II</h3>
 								<?php echo CFS()->get ('zephyr_2');?>
 							</div>
 					</li>
@@ -59,7 +59,7 @@ get_header(); ?>
 							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/zephyr4.png">
 						</div>
 							<div id="padding" class="content container">
-								<h3>Zephyr IV</h3>
+								<h3 class="zephyr-title">Zephyr IV</h3>
 								<?php echo CFS()->get ('zephyr_4');?>							
 							</div>	
 					</li>
@@ -68,7 +68,7 @@ get_header(); ?>
 							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/zephyr8.png">
 						</div>	
 							<div id="padding" class="content container">
-								<h3>Zephyr VIII</h3>
+								<h3 class="zephyr-title">Zephyr VIII</h3>
 								<?php echo CFS()->get ('zephyr_8');?>							
 							</div>
 					</li>
