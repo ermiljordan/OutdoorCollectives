@@ -867,8 +867,10 @@ object {
 .home-subscribe {
   color: #de4d61;
   margin: 0;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-top: 2rem; }
+
+.subscribe p {
+  padding-bottom: 1rem; }
 
 .zephyr-tent-cap {
   font-size: 1.5rem;
@@ -1185,6 +1187,10 @@ img.tents {
 
 body.down header.clone {
   top: 0; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .container {
   max-width: 100%;

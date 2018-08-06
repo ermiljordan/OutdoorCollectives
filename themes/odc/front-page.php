@@ -15,6 +15,12 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<section>
+				<iframe id="ytplayer" type="text/html" width="1880" height="760"
+								src="https://www.youtube.com/embed/bz3pzdPF4VQ?playlist=&version=3&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&rel=0&showinfo=0&start=00&color=white&iv_load_policy=3"
+								frameborder="0" allowfullscreen>
+				</iframe>
+			</section>
       <section class="hero-banner">
 				<div class="logo-sub container">
 					<div class="logo-banner">
@@ -23,8 +29,11 @@ get_header(); ?>
 					<div class="newsletter">
 						<?php echo CFS()->get('hero_banner_caption'); ?>	
 					</div><!--NEWS LETTER-->
+					<div class="subscribe">
 					<h3 class="home-subscribe">Subscribe</h3>
-					<?php echo do_shortcode('[mc4wp_form id="25"]'); ?> 
+						<?php echo CFS()->get('subscribe_box'); ?>
+						<?php echo do_shortcode('[mc4wp_form id="25"]'); ?> 
+					</div>
 				</div><!--Logo banner-->
       </section><!--HERO BANNER--> 
 	<section class="about-zypher">

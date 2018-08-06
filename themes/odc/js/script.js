@@ -1,6 +1,5 @@
 (function( $ ) {
   var homeClass = $("body").hasClass("home");
-  console.log('hello');
   if(homeClass) {
     $("#masthead").addClass("reverse-header");
     $(window).scroll(function() {
