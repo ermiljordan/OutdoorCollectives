@@ -841,6 +841,24 @@ object {
 /*--------------------------------------------------------------
 # front-page
 --------------------------------------------------------------*/
+.mobile-gone {
+  display: none; }
+  @media (min-width: 1240px) {
+    .mobile-gone {
+      display: unset; } }
+
+.mobile-ok {
+  border-top: 10px solid white; }
+  @media (min-width: 1240px) {
+    .mobile-ok {
+      display: none; } }
+
+.mobile-look {
+  height: 210px; }
+  @media (min-width: 600px) {
+    .mobile-look {
+      height: 420px; } }
+
 .home
 .hero-banner {
   height: 100vh;
@@ -1071,6 +1089,7 @@ img.tents {
         width: 30.6vw; } }
 
 .stary-nights {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1081,19 +1100,72 @@ img.tents {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid white;
-  text-align: center; }
+  text-align: center;
+  z-index: 1; }
+  .stary-nights::before, .stary-nights::after {
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+    opacity: 1;
+    -webkit-transition: -webkit-transform ease-out 250ms;
+    transition: -webkit-transform ease-out 250ms;
+    transition: transform ease-out 250ms;
+    transition: transform ease-out 250ms, -webkit-transform ease-out 250ms; }
+  .stary-nights::before {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    -webkit-transform: scale(0, 1);
+            transform: scale(0, 1); }
+  .stary-nights::after {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0); }
+  .stary-nights:hover::before {
+    -webkit-transform: scale(1.05, 1);
+            transform: scale(1.05, 1); }
+  .stary-nights:hover::after {
+    -webkit-transform: scale(1, 1.05);
+            transform: scale(1, 1.05); }
   @media (min-width: 1240px) {
     .stary-nights {
       height: 50vh; } }
-  .stary-nights h3 {
-    margin: 0 auto;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    color: #fff;
-    font-size: .9rem; }
-    @media (min-width: 600px) {
-      .stary-nights h3 {
-        font-size: 1.7rem; } }
+
+.stary-caption h3 {
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: #fff;
+  font-size: .9rem; }
+  @media (min-width: 600px) {
+    .stary-caption h3 {
+      font-size: 1.7rem; } }
+
+.stary-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0; }
+
+.stary-caption h3 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+
+.stary-nights:hover .stary-caption {
+  opacity: 1; }
+
+.stary-nights:hover .stary-caption h3 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
 
 .adventure {
   display: -webkit-box;

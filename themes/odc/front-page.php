@@ -35,8 +35,14 @@ get_header(); ?>
 						<?php echo do_shortcode('[mc4wp_form id="25"]'); ?> 
 					</div>
 				</div><!--Logo banner-->
-      </section><!--HERO BANNER--> 
-	<section class="about-zypher">
+			</section><!--HERO BANNER--> 
+			<section class="mobile-ok">
+				<iframe class="mobile-look" id="ytplayer" type="text/html" position:relative width="760" height="760"
+								src="https://www.youtube.com/embed/bz3pzdPF4VQ?playlist=&version=3&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&rel=0&showinfo=0&start=00&color=white&iv_load_policy=3"
+								frameborder="0" allowfullscreen>
+				</iframe>
+			</section>
+		<section class="about-zypher">
 		<div class="about-text container">
 				<?php echo CFS()->get('zephyr_info'); ?>
 		</div>

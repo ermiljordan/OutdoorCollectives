@@ -1,10 +1,22 @@
 // IFRAME MOBILE and DESKTOP
-// .mobile-gone {
-//   display: none;
-//   @include desktop {
-//     display: unset;
-//   }
-// }
+.mobile-gone {
+  display: none;
+  @include desktop {
+    display: unset;
+  }
+}
+.mobile-ok {
+  border-top: 10px solid white;
+  @include desktop {
+    display: none;
+  }
+}
+.mobile-look {
+  height: 210px;
+  @include tablet {
+    height: 420px;
+  }
+}
 // BANNER
 .home 
 .hero-banner {
@@ -214,26 +226,84 @@
    }
  }
   // STARY-NIGHT 
-.stary-nights {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid white;
-  text-align: center;
-  @include desktop {
-    height: 50vh;
-  }
-  h3 {
-  margin: 0 auto;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  color: #fff;
-  font-size: .9rem;
-  @include tablet {
-    font-size: 1.7rem;
+
+  .stary-nights {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+    text-align: center;
+    z-index: 1;
+  
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 1.25em;
+      bottom: 1.25em;
+      left: 1.25em;
+      right: 1.25em;
+      opacity: 1;
+      transition: transform ease-out 250ms;
+    }
+    &::before {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      transform: scale(0,1);
+    }
+    
+    &::after {
+      
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      transform: scale(1,0);
+    }
+    
+    &:hover::before {
+      transform: scale(1.05, 1);
+    }
+    
+    &:hover::after {
+      transform: scale(1, 1.05);
+    }
+    @include desktop {
+      height: 50vh;
     }
   }
-}
+  .stary-caption h3 {
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: #fff;
+    font-size: .9rem;
+    @include tablet {
+      font-size: 1.7rem;
+      }
+    }
+  
+  .stary-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+  }
+  .stary-caption h3 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0;
+    transition: all .2s ease-in-out 
+  }
+  .stary-nights:hover .stary-caption {
+    opacity: 1;
+  }
+  .stary-nights:hover .stary-caption h3 {
+    transform: scale(1.2)
+  }
+  
+  
 //ADVENTURE 
 
 .adventure {
@@ -278,3 +348,4 @@
       display: none;
     }
   }
+
