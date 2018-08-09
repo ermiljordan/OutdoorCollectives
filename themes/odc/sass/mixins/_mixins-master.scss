@@ -34,8 +34,13 @@ $tablet-width: 600px;
 $screen-width: 950px;
 $window-width: 640px;
 $desktop-width: 1240px; 
+$mobile-width: 400px;
 
-
+@mixin mobile {
+	@media(min-width: $mobile-width) {
+		@content
+	}
+}
 @mixin tablet {
    @media (min-width: $tablet-width) {
        @content;

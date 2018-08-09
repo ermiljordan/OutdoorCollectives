@@ -1,12 +1,23 @@
 // IFRAME MOBILE and DESKTOP
 .mobile-gone {
-  display: none;
+  @include tablet {
+    display: unset;
+  }
+  @include window {
+    display: unset;
+  }
   @include desktop {
     display: unset;
   }
 }
 .mobile-ok {
   border-top: 10px solid white;
+  @include tablet {
+    display: none;
+  }
+  @include window {
+    display: none;
+  }
   @include desktop {
     display: none;
   }
@@ -41,6 +52,10 @@
 }
 .subscribe p {
   padding-bottom: 1rem;
+  width: 273px;
+  @include desktop {
+    width: 100%;
+  }
 }
 .zephyr-tent-cap {
   font-size: 1.5rem;
@@ -225,6 +240,17 @@
      }
    }
  }
+ table, td {
+  border: 1px solid black;
+  font-size: 1rem;
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-style: normal;
+  margin: 0 auto;
+}
+.info {
+  font-weight: bold;
+}
   // STARY-NIGHT 
 
   .stary-nights {
@@ -234,8 +260,7 @@
     align-items: center;
     border-bottom: 1px solid white;
     text-align: center;
-    z-index: 1;
-  
+
     &::before,
     &::after {
       content: '';
@@ -267,9 +292,108 @@
     &:hover::after {
       transform: scale(1, 1.05);
     }
-    @include desktop {
+    @include tablet {
       height: 50vh;
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 1.25em;
+        bottom: 1.25em;
+        left: 1.25em;
+        right: 1.25em;
+        opacity: 1;
+        transition: transform ease-out 250ms;
+      }
+      &::before {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        transform: scale(0,1);
+      }
+      
+      &::after {
+        
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        transform: scale(1,0);
+      }
+      
+      &:hover::before {
+        transform: scale(1.05, 1);
+      }
+      
+      &:hover::after {
+        transform: scale(1, 1.05);
+      }
     }
+    @include window {
+      height: 50vh;
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 1.25em;
+        bottom: 1.25em;
+        left: 1.25em;
+        right: 1.25em;
+        opacity: 1;
+        transition: transform ease-out 250ms;
+      }
+      &::before {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        transform: scale(0,1);
+      }
+      
+      &::after {
+        
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        transform: scale(1,0);
+      }
+      
+      &:hover::before {
+        transform: scale(1.05, 1);
+      }
+      
+      &:hover::after {
+        transform: scale(1, 1.05);
+      }
+    }
+  @include desktop {
+      height: 50vh;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 1.25em;
+      bottom: 1.25em;
+      left: 1.25em;
+      right: 1.25em;
+      opacity: 1;
+      transition: transform ease-out 250ms;
+    }
+    &::before {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      transform: scale(0,1);
+    }
+    
+    &::after {
+      
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      transform: scale(1,0);
+    }
+    
+    &:hover::before {
+      transform: scale(1.05, 1);
+    }
+    
+    &:hover::after {
+      transform: scale(1, 1.05);
+    }
+  }
   }
   .stary-caption h3 {
     margin: 0 auto;
@@ -283,6 +407,22 @@
     }
   
   .stary-caption {
+    opacity: 1;
+    @include tablet {
+      top: 50%;
+      left: 50%;
+      transform: translate(10%, 0%);
+      color: white;
+      opacity: 0;
+    }
+    @include window {
+      top: 50%;
+      left: 50%;
+      transform: translate(10%, 0%);
+      color: white;
+      opacity: 0;
+    }
+    @include desktop{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -290,18 +430,40 @@
     color: white;
     opacity: 0;
   }
+}
   .stary-caption h3 {
-    font-size: 2rem;
+    font-size: .7rem;
     color: white;
     margin-bottom: 0;
-    transition: all .2s ease-in-out 
+    transition: all .2s ease-in-out;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+    @include window {
+      font-size: 1.5rem;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      transition: all .2s ease-in-out;
+    }
+    @include desktop {
+      font-size: 1.7rem;
+    }
   }
   .stary-nights:hover .stary-caption {
-    opacity: 1;
+      opacity: 1;
   }
   .stary-nights:hover .stary-caption h3 {
-    transform: scale(1.2)
+    @include tablet {
+      transform: scale(1.4);
+    }
+    @include window {
+      transform: scale(1.3);
+    }
+    @include desktop {
+    transform: scale(1.2);
+    }
   }
+  
   
   
 //ADVENTURE 

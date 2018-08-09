@@ -17,8 +17,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<section class="mobile-gone">
 				<iframe id="ytplayer" type="text/html" position:relative width="1780" height="760"
-								src="https://www.youtube.com/embed/bz3pzdPF4VQ?playlist=&version=3&autoplay=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&rel=0&showinfo=0&start=00&color=white&iv_load_policy=3"
-								frameborder="0" allowfullscreen>
+				src="https://www.youtube.com/embed/bz3pzdPF4VQ?cc_load_policy=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&rel=0&showinfo=0&start=00&color=white"
+						frameborder="0" allowfullscreen>
 				</iframe>
 			</section>
       <section class="hero-banner">
@@ -54,6 +54,18 @@ get_header(); ?>
 					<li>
 						<div class="thumbnail-tents">
 							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/zephyr2.png">
+							<table style="width:100%">
+								<tr>
+								<td class="info">Size(setup)</td>
+								<td class="info">Size(packed)</td>
+								<td class="info">Total Weight</td>
+								</tr>
+								<tr>
+								<td>50″ x 7.7″ x 9″</td>
+								<td>23″ x 10″ x 10″</td>
+								<td>5.65kg</td>
+							</tr>
+						</table>
 						</div>
 							<div id="padding" class="content container">
 								<h3 class="zephyr-title">Zephyr II</h3>
@@ -63,6 +75,18 @@ get_header(); ?>
 					<li>
 						<div class="thumbnail-tents">
 							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/zephyr4.png">
+							<table style="width:100%">
+								<tr>
+								<td class="info">Size(setup)</td>
+								<td class="info">Size(packed)</td>
+								<td class="info">Total Weight</td>
+							</tr>
+							<tr>
+								<td>6.3′ x 8′ x 1.1′</td>
+								<td>31.5″ x 14″ x 14″</td>
+								<td>11.2kg</td>
+							</tr>
+						</table>
 						</div>
 							<div id="padding" class="content container">
 								<h3 class="zephyr-title">Zephyr IV</h3>
@@ -72,6 +96,18 @@ get_header(); ?>
 					<li>
 						<div class="thumbnail-tents">
 							<img class="tent" src="<?php echo get_template_directory_uri(); ?>/images/ocImages/zephyr8.png">
+						<table style="width:100%">
+						<tr>
+								<td class="info">Size(setup)</td>
+								<td class="info">Size(packed)</td>
+								<td class="info">Total Weight</td>
+							</tr>
+							<tr>
+								<td>14′ x 8.2′ x 8.6′</td>
+								<td>31.5″ x 14″ x 14″</td>
+								<td>20.29kg</td>
+							</tr>
+						</table>
 						</div>	
 							<div id="padding" class="content container">
 								<h3 class="zephyr-title">Zephyr VIII</h3>
