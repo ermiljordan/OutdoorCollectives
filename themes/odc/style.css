@@ -841,34 +841,20 @@ object {
 /*--------------------------------------------------------------
 # front-page
 --------------------------------------------------------------*/
-@media (min-width: 600px) {
-  .mobile-gone {
-    display: unset; } }
-
-@media (min-width: 640px) {
-  .mobile-gone {
-    display: unset; } }
-
-@media (min-width: 1240px) {
-  .mobile-gone {
-    display: unset; } }
-
-.mobile-ok {
-  border-top: 10px solid white; }
-  @media (min-width: 600px) {
-    .mobile-ok {
-      display: none; } }
+.youtube {
+  background: #000;
+  border-top: 10px solid #fff; }
   @media (min-width: 640px) {
-    .mobile-ok {
-      display: none; } }
+    .youtube {
+      border-top: 3px solid #fff; } }
   @media (min-width: 1240px) {
-    .mobile-ok {
-      display: none; } }
+    .youtube {
+      border-top: 3px solid #fff; } }
 
-.mobile-look {
+#ytplayer {
   height: 210px; }
   @media (min-width: 600px) {
-    .mobile-look {
+    #ytplayer {
       height: 420px; } }
 
 .home
@@ -979,7 +965,10 @@ object {
               flex-direction: column; } }
 
 .zypher-tents {
-  padding: 3.5rem 0 2rem; }
+  padding: 2rem 0 2rem; }
+  @media (min-width: 1240px) {
+    .zypher-tents {
+      padding: 3.5rem 0 2rem; } }
   .zypher-tents .tents-text {
     max-width: 100%;
     margin: 0 auto;
@@ -1060,7 +1049,7 @@ img.tents {
   padding-left: 15px; }
 
 .content p::before {
-  content: '\f192';
+  content: '\f111';
   padding-right: 5px;
   font-size: 14px;
   font-weight: 100;
@@ -1354,7 +1343,9 @@ table, td {
   display: none; }
   @media (min-width: 600px) {
     .right-caption {
-      display: none; } }
+      display: none; }
+      .right-caption p {
+        text-align: left; } }
   @media (min-width: 1240px) {
     .right-caption {
       -webkit-box-orient: vertical;

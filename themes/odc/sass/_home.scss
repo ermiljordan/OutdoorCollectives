@@ -1,28 +1,15 @@
 // IFRAME MOBILE and DESKTOP
-.mobile-gone {
-  @include tablet {
-    display: unset;
-  }
+.youtube {
+  background: #000;
+  border-top: 10px solid #fff;
   @include window {
-    display: unset;
+    border-top: 3px solid #fff;
   }
   @include desktop {
-    display: unset;
+    border-top: 3px solid #fff;
   }
 }
-.mobile-ok {
-  border-top: 10px solid white;
-  @include tablet {
-    display: none;
-  }
-  @include window {
-    display: none;
-  }
-  @include desktop {
-    display: none;
-  }
-}
-.mobile-look {
+#ytplayer {
   height: 210px;
   @include tablet {
     height: 420px;
@@ -122,7 +109,10 @@
 
   // OUR TENTS
   .zypher-tents {
-    padding: 3.5rem 0 2rem;
+    padding: 2rem 0 2rem;
+    @include desktop {
+      padding: 3.5rem 0 2rem
+    }
     .tents-text {
       max-width: 100%;
       margin: 0 auto;
@@ -192,7 +182,7 @@
       padding-left: 15px;
     }
     .content p::before {
-      content: '\f192';
+      content: '\f111';
       padding-right: 5px;
       font-size: 14px;
       font-weight: 100;
@@ -490,6 +480,9 @@
     display: none;
     @include tablet {
       display: none;
+      p {
+        text-align: left;
+      }
     }
     @include desktop {
       flex-direction: column;

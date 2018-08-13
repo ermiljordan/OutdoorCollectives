@@ -13,14 +13,25 @@
  */
 
 get_header(); ?>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119269340-3"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+
+
+  gtag('config', 'UA-119269340-3');
+
+</script>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<section class="mobile-gone">
-				<iframe id="ytplayer" type="text/html" position:relative width="1780" height="760"
-				src="https://www.youtube.com/embed/bz3pzdPF4VQ?cc_load_policy=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&rel=0&showinfo=0&start=00&color=white"
-						frameborder="0" allowfullscreen>
-				</iframe>
-			</section>
       <section class="hero-banner">
 				<div class="logo-sub container">
 					<div class="logo-banner">
@@ -36,10 +47,10 @@ get_header(); ?>
 					</div>
 				</div><!--Logo banner-->
 			</section><!--HERO BANNER--> 
-			<section class="mobile-ok">
-				<iframe class="mobile-look" id="ytplayer" type="text/html" position:relative width="760" height="760"
-								src="https://www.youtube.com/embed/bz3pzdPF4VQ?playlist=&version=3&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&rel=0&showinfo=0&start=00&color=white&iv_load_policy=3"
-								frameborder="0" allowfullscreen>
+			<section class="youtube">
+			<iframe id="ytplayer" type="text/html" position:relative width="1780" height="760"
+				src="https://www.youtube.com/embed/bz3pzdPF4VQ?cc_load_policy=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&rel=0&showinfo=0&start=00&color=white"
+						frameborder="0" allowfullscreen>
 				</iframe>
 			</section>
 		<section class="about-zypher">
@@ -138,6 +149,15 @@ get_header(); ?>
 	</section>
 	</main><!-- #main -->
 	</div><!-- #primary -->
+	<!-- Statcounter code for Zephyr Air Frame Tent https://www.zephyrairframetent.com on WordPress.org -->
+<script type="text/javascript">
+var sc_project=11788111; 
+var sc_invisible=1; 
+var sc_security="8fe8cfe2"; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11788111/0/8fe8cfe2/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
 <?php
 get_sidebar();
 get_footer();

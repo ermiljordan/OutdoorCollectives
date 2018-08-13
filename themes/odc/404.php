@@ -25,5 +25,13 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<!-- Statcounter code for Zephyr Air Frame Tent https://www.zephyrairframetent.com on WordPress.org -->
+	<script type="text/javascript">
+var sc_project=11788111; 
+var sc_invisible=1; 
+var sc_security="8fe8cfe2"; 
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11788111/0/8fe8cfe2/1/" alt="Web Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
 <?php
