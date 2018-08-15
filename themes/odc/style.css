@@ -841,21 +841,27 @@ object {
 /*--------------------------------------------------------------
 # front-page
 --------------------------------------------------------------*/
+.webkit-537 .html5-video-player {
+  background-color: #fff !important; }
+
 .youtube {
-  background: #000;
-  border-top: 10px solid #fff; }
+  background: #fff;
+  border-top: 5px solid #fff; }
   @media (min-width: 640px) {
     .youtube {
-      border-top: 3px solid #fff; } }
+      border-top: 4px solid #fff; } }
   @media (min-width: 1240px) {
     .youtube {
-      border-top: 3px solid #fff; } }
+      border-top: 10px solid #fff; } }
 
 #ytplayer {
   height: 210px; }
   @media (min-width: 600px) {
     #ytplayer {
       height: 420px; } }
+  @media (min-width: 1240px) {
+    #ytplayer {
+      height: 500px; } }
 
 .home
 .hero-banner {

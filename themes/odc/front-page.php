@@ -48,7 +48,7 @@ get_header(); ?>
 				</div><!--Logo banner-->
 			</section><!--HERO BANNER--> 
 			<section class="youtube">
-			<iframe id="ytplayer" type="text/html" position:relative width="1780" height="760"
+			<iframe id="ytplayer" type="text/html" position:relative width="890" height="760"
 				src="https://www.youtube.com/embed/bz3pzdPF4VQ?cc_load_policy=1&controls=0&disablekb=1&fs=0&loop=1&modestbranding=1&rel=0&showinfo=0&start=00&color=white"
 						frameborder="0" allowfullscreen>
 				</iframe>

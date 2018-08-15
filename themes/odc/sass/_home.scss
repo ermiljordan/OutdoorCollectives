@@ -1,18 +1,23 @@
-// IFRAME MOBILE and DESKTOP
+.webkit-537 .html5-video-player {
+  background-color: #fff !important;
+}
 .youtube {
-  background: #000;
-  border-top: 10px solid #fff;
+  background: #fff;
+  border-top: 5px solid #fff;
   @include window {
-    border-top: 3px solid #fff;
+    border-top: 4px solid #fff;
   }
   @include desktop {
-    border-top: 3px solid #fff;
+    border-top: 10px solid #fff;
   }
 }
 #ytplayer {
   height: 210px;
   @include tablet {
     height: 420px;
+  }
+  @include desktop {
+    height: 500px;
   }
 }
 // BANNER
